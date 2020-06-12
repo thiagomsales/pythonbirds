@@ -1,2 +1,2 @@
-class Pessoas:
+class Pessoa:
     pass
