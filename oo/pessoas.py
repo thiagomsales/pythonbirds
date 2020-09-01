@@ -21,7 +21,7 @@ class Homem(Pessoa):
 
 class Mutante(Pessoa):
     olhos = 3
-    pass
+
 
 if __name__ == '__main__':
      thiago = Mutante(nome='Sales')
@@ -34,7 +34,6 @@ if __name__ == '__main__':
      for filho in rogerio.filhos:
         print(filho.nome)
      rogerio.sobrenome = 'Sales'
-     rogerio.olhos = 1
      print(rogerio.__dict__)
      print(thiago.__dict__)
      print(Pessoa.olhos)
@@ -46,8 +45,8 @@ if __name__ == '__main__':
      pessoa=Pessoa('Anonimo')
      print(isinstance(pessoa, Pessoa))
      print(isinstance(pessoa, Homem))
-     print(isinstance(rogerio.olhos))
-     print(isinstance(rogerio.olhos))
+     print(isinstance(thiago.olhos))
+
 
 
 
